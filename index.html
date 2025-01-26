@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Natanael - Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Daniel Natanael, Web Developer and Graphic Designer">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs/3.2.0/emailjs.min.js" defer></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "IQSH2DBMwnNJ2ykeI",
+    });
+    })();
+    </script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar-container" role="navigation" data-aos="fade-down">
+        <div class="nama">
+            <h3>DANIEL <span>NATANAEL</span></h3>
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home" aria-label="Home Section">Home</a></li>
+                <li><a href="#about" aria-label="About Section">About</a></li>
+                <li><a href="#project" aria-label="Project Section">Project</a></li>
+                <li><a href="#contact-form" aria-label="Contact Section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="home-title">
+            <div class="title-name" data-aos="zoom-in">
+              <div class="text-content">
+                <p>Hello, I'm</p>
+                <h1 id="home-title">Daniel Natanael Butar Butar</h1>
+                <h3 class="skom">Bachelor of Computer Science</h3>
+                <h2 class="typing-effect" aria-live="polite">Web Developer</h2>
+                <p>Welcome to my personal website <span id="wavingHand">👋</span></p>
+                <div class="social-links">
+                    <a href="https://github.com/DanielNatanael" target="_blank" aria-label="GitHub" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-natanael-butar-butar-878882247/" target="_blank" aria-label="LinkedIn" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/daniel_btr2/" target="_blank" aria-label="Instagram" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@danielnb_?_t=8otlP4m85ay&_r=1" target="_blank" aria-label="TikTok" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+                <div class="foto-profile" data-aos="fade-left">
+                    <img src="img/putih foto blue.jpg" alt="Daniel Natanael Profile Picture" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-title" data-aos="fade-right">
+            <div class="about-container">
+                <article class="text-about">
+                    <h1 id="about-title">About Me</h1>
+                    <p>Lulusan Teknik Informatika yang penuh semangat dan memiliki visi menjadi Web Developer profesional. Berpengalaman dalam pengembangan web, desain grafis, dan pemecahan masalah teknis. Aktif dalam organisasi kampus serta berbagai kegiatan kepanitiaan, dengan keterampilan komunikasi yang baik dan kemampuan beradaptasi dalam lingkungan yang dinamis.</p>
+                </article>
+                <div class="foto-about">
+                    <img src="img/about-foto.png" alt="Daniel Natanael About Picture" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="fade-in" data-aos="fade-up">
+            <h2>Tools</h2>
+            <div class="tools-icons">
+                <img src="img/html.png" alt="HTML" class="tool-icon">
+                <img src="img/css-3.png" alt="CSS" class="tool-icon">
+                <img src="img/js.png" alt="JavaScript" class="tool-icon">
+                <img src="img/sql.png" alt="MySQL" class="tool-icon">
+                <img src="img/github.png" alt="Github" class="tool-icon">
+                <img src="img/photoshop.png" alt="Adobe Photoshop" class="tool-icon">
+                <img src="img/corel.png" alt="CorelDRAW" class="tool-icon">
+                <img src="img/premiere-pro.png" alt="Adobe premiere-pro" class="tool-icon">
+                <img src="img/word.png" alt="Microsoft Word" class="tool-icon">
+                <img src="img/excel.png" alt="Microsoft excel" class="tool-icon">
+                <img src="img/powerpoint.png" alt="Microsoft powerpoint" class="tool-icon">
+            </div>
+        </section>
+
+        <section id="project" class="fade-in" data-aos="fade-up">
+            <h2>Project</h2>
+            <div class="project-gallery">
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/project1.png" alt="Aplikasi Point Of sale menggunakan Laravel" class="project-horizontal">
+                    <a href="https://youtu.be/Gvdw-A1wjFo?si=jq2VuPE5h-Ysw_9B" target="_blank"><p class="certificate-name">Aplikasi Point Of Sale Menggunakan Laravel</p></a>
+                </div>
+                <div class="project-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="img/project2.png" alt="Game Sederhana" class="project-horizontal">
+                    <a href="https://youtu.be/_jLCi4QqrLQ?si=Hww9La28_VdEuaeT" target="_blank"> <p class="project-name">Game Sederhana - Flying Bird Menggunakan Java di Aplikasi Processing</p></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="designs" class="fade-in" data-aos="fade-left">
+            <h2>Design</h2>
+            <div class="designs-gallery">
+                <img src="img/logopmm.png" alt="Logo PMM UNDIPA" loading="lazy" data-aos="zoom-in">
+                <img src="img/pkkmb2022unilak.jpg" alt="Twibbon PKKMB2022" loading="lazy" data-aos="zoom-in" data-aos-delay="100">
+                <img src="img/LOGO PKKMB2022.png" alt="Logo PKKMB2022" loading="lazy" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+        </section>
+
+        <section id="awards" class="fade-in" data-aos="fade-up">
+            <h2>Certificate</h2>
+            <div class="certificate-gallery">
+                <div class="certificate-item" data-aos="flip-left">
+                    <img src="img/pemogramanweb.png" alt="Sertifikat Kompetensi Kelulusan Belajar Dasar Peograman Web (Dicoding Academy)" class="certificate-horizontal">
+                    <a href="https://drive.google.com/file/d/1dpaf0zzWLB5YaRu1YOEgL8bMGusIPWXb/view?usp=drive_link" target="_blank"><p class="certificate-name">Sertifikat Kompetensi Kelulusan Belajar Dasar Pemograman Web <br>(Dicoding Academy)</p></a>
+                </div>
+                <div class="certificate-item" data-aos="flip-left" data-aos-delay="100">
+                    <img src="img/dasarjavascript.png" alt="Sertifikat Kompetensi Kelulusan Belajar Dasar Pemograman JavaScript" class="certificate-horizontal">
+                    <a href="https://drive.google.com/file/d/1zfb-d7plVEXc1fvpNQ76SKTs-YuISeww/view?usp=drive_link" target="_blank"> <p class="certificate-name">Sertifikat Kompetensi Kelulusan Belajar Dasar Pemograman JavaScript <br> (Dicoding Academy)</p></a>
+                </div>
+                <div class="certificate-item" data-aos="flip-left" data-aos-delay="200">
+                    <img src="img/sertifikatpmm.jpg" alt="Sertifikat Pertukaran Mahasiswa Merdeka" class="certificate-horizontal">
+                  <a href="https://drive.google.com/file/d/1I-xe5sqeRWVwe_2GEnPwVaTlmmrHIoMn/view?usp=drive_link" target="_blank"> <p class="certificate-name">Sertifikat Pertukaran Mahasiswa Merdeka <br> (Kemendikbudristek)</p></a>
+                </div>
+                <div class="certificate-item" data-aos="flip-left" data-aos-delay="300">
+                    <img src="img/sertifikatlaravel.jpg" alt="Sertifikat Pelatihan Laravel" class="certificate-horizontal">
+                <a href="https://drive.google.com/file/d/1m0TJny2x-rOuInrKn2xRmhwd3SzImp0P/view?usp=drive_link" target="_blank"><p class="certificate-name">Sertifikat Kompetensi Kelulusan Pelatihan Intensif Laravel <br> (Garuda Cyber Institute)</p></a>
+                </div>
+                <div class="certificate-item" data-aos="flip-left" data-aos-delay="400">
+                    <img src="img/bnsp1.jpg" alt="Sertifikat Kompetensi Teknisi Komputer dan Jaringan" class="certificate-horizontal">
+                  <a href="https://drive.google.com/file/d/145nsSt1CAKjLF8OjwvERzN1r4931une3/view?usp=sharing" target="_blank"><p class="certificate-name">Sertifikat Kompetensi Teknisi Komputer dan Jaringan <br> (BNSP)</p></a>
+                </div>
+            </div>
+        </section>
+
+            <section id="moments" class="fade-in" data-aos="fade-up">
+                <h3>Momen dan Pencapaian</h3>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide" data-aos="zoom-in">
+                            <img src="img/Pmm.JPG" alt="Momen 1">
+                            <div class="caption">Pertukaran Mahasiswa Merdeka 2023</div>
+                        </div>
+                        <div class="slide" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="img/pkkmb.JPG" alt="Momen 2">
+                            <div class="caption">Panitia PKKMB Universitas Lancang Kuning 2022</div>
+                        </div>
+                        <div class="slide" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/PelantikanBEM.JPG" alt="Momen 3">
+                            <div class="caption">Pelantikan BEM Universitas Lancang Kuning Periode 2022/2023</div>
+                        </div>
+                        <div class="slide" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="img/hmk.JPG" alt="Momen 4">
+                            <div class="caption">Panitia Natal HMK 2022</div>
+                        </div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </section>
+
+            <section id="contact-form" class="fade-in" data-aos="fade-up">
+                <h2>Kirim Pesan</h2>
+                <form id="contactForm" onsubmit="sendMail(); return false;">
+                    <div class="form-group">
+                        <label for="name" class="forms">Nama:</label>
+                        <input type="text" id="name" name="name" placeholder="Nama Anda*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="forms">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Anda*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="forms">Pesan:</label>
+                        <textarea id="message" name="message" placeholder="Tulis pesan Anda*" required></textarea>
+                    </div>
+                    <button type="submit" onclick="sendMail()">Kirim Pesan</button>
+                </form>
+                <p id="form-status"></p> <!-- Message after form submission -->
+            </section>
+              
+    </main>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2024 Daniel Natanael Butar Butar. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+            });
+        });
+    </script>
+</body>
+</html>
