@@ -22,17 +22,18 @@ h1, h2, p{
 }
 
 header.navbar-container {
-    width: 100%;
-    padding-block: 0rem;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
-    color: white;
-    position: fixed;
-    background-color: #030616;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  height: 60px; /* Fixed height for consistency */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  position: fixed;
+  background-color: #030616;
+  transition: background-color 0.3s ease;
+  top: 0; /* Ensure it sticks to the top */
 }
 
 header.navbar-container .nav-list ul {
@@ -69,7 +70,8 @@ header.navbar-container .nav-list li:hover a {
 }
 
 main {
-    width: 100%;
+  width: 100%;
+  padding-top: 60px; /* Same as navbar height */
 }
 
 .title-name {
@@ -93,7 +95,11 @@ main {
 }
 
 #home {
-    height: 750px;
+    height: 100vh; /* Use viewport height instead of fixed pixel value */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0; /* Remove additional padding */
 }
 
 .text-content {
@@ -170,7 +176,7 @@ main .text-content h1 {
 
 #contact-form h2 {
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 aside .social-media img {
@@ -239,20 +245,28 @@ button[type="submit"]:hover {
     color: #017687;
 }
 
-footer {
-  padding: 10px;
-  color: white;
-  background-color: #030616;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
 @media (max-width: 768px) {
   header.navbar-container {
     flex-direction: column;
-    padding: 5px;
-  }
+    padding: 0px 0; /* Mengurangi jarak padding */
+    gap: 1px; /* Jarak antar elemen lebih rapat */
+}
+
+header.navbar-container .nav-list ul {
+    /* Susunan vertikal pada mode HP */
+    gap: 1px; /* Jarak antar link lebih rapat */
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.3rem 1rem; /* Ukuran tombol lebih kecil */
+  font-size: 0.9rem; /* Mengurangi ukuran font */
+}
+
+.nama h3{
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 
 
 
@@ -600,6 +614,15 @@ button {
 
 .tool-icon:hover {
   transform: scale(1.2); /* Membesarkan ikon saat hover */
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: #030616;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 
