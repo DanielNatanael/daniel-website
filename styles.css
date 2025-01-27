@@ -256,6 +256,13 @@ button[type="submit"]:hover {
   height: 80vh;
 }
 
+.text-content {
+  line-height: 1.4; /* Kurangi jarak antar baris, nilai default biasanya 1.5 */
+  margin: 0; /* Pastikan tidak ada margin tambahan */
+  padding: 0 1rem; /* Beri padding untuk kenyamanan tampilan */
+}
+
+
 
 header.navbar-container .nav-list ul {
     /* Susunan vertikal pada mode HP */
@@ -304,14 +311,15 @@ header.navbar-container .nav-list li a {
   }
   .text-content h1,h2 {
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 0;
+    line-height: 1.1;
   }
   .foto-profile {
     
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-top: -20px !important; /* Kurangi jarak secara paksa */
+    margin-top: -80px !important; /* Kurangi jarak secara paksa */
   }
 
   .foto-profile img{
@@ -640,6 +648,58 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: 0.8rem;
+}
+
+@media (max-width: 475px) {
+  /* Perbaikan posisi foto profil */
+  .foto-profile {
+    padding-top: 30px;
+     /* Tambahkan margin agar tidak terlalu ke atas */
+  }
+
+  .foto-profile img {
+    width: 120px; /* Sesuaikan ukuran gambar */
+    min-width: 120px; /* Pastikan minimum size untuk menjaga proporsi */
+    
+  }
+
+  /* Footer teks lebih kecil */
+  footer {
+    font-size: 0.7rem; /* Perkecil teks footer */
+    padding: 5px; /* Kurangi padding agar lebih ramping */
+  }
+
+  /* Teks lebih kecil di dalam footer */
+  footer p {
+    margin: 0; /* Pastikan tidak ada margin tambahan */
+  }
+
+  /* Atur ulang elemen jika diperlukan */
+  .title-name {
+    gap: 0.5rem; /* Kurangi jarak antar elemen judul */
+  }
+
+  .text-content {
+    padding: 0 1rem; /* Beri padding di sisi kiri dan kanan */
+    line-height: 1.3; /* Kurangi jarak antar baris */
+  }
+
+  .about-container {
+    gap: 0.5rem; /* Kurangi jarak antara elemen di dalam about */
+  }
+
+  .about-container p {
+    font-size: 0.6rem; /* Kurangi ukuran teks untuk layar kecil */
+  }
+
+  .slider-container {
+    padding: 0; /* Kurangi padding pada slider */
+  }
+
+  .slider .slide img {
+    width: 100%; /* Pastikan slider responsif */
+    height: auto;
+  }
 }
 
 
