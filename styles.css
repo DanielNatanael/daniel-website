@@ -95,7 +95,7 @@ main {
 }
 
 #home {
-    height: 100vh; /* Use viewport height instead of fixed pixel value */
+    height: 95vh; /* Use viewport height instead of fixed pixel value */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +251,10 @@ button[type="submit"]:hover {
     padding: 0px 0; /* Mengurangi jarak padding */
     gap: 1px; /* Jarak antar elemen lebih rapat */
 }
-
+#home {
+    height: 80vh; /* Use viewport height instead of fixed pixel value */
+}
+  
 header.navbar-container .nav-list ul {
     /* Susunan vertikal pada mode HP */
     gap: 1px; /* Jarak antar link lebih rapat */
