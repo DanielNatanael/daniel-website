@@ -246,25 +246,25 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+
   header.navbar-container {
     flex-direction: column;
     padding: 0px 0; /* Mengurangi jarak padding */
     gap: 1px; /* Jarak antar elemen lebih rapat */
 }
-  footer{
-    font-size: 0.7rem;
-  }
 #home {
-    height: 80vh; /* Use viewport height instead of fixed pixel value */
+  height: 80vh;
 }
-  
+
+
 header.navbar-container .nav-list ul {
     /* Susunan vertikal pada mode HP */
     gap: 1px; /* Jarak antar link lebih rapat */
+    margin: 0 auto;
 }
 
 header.navbar-container .nav-list li a {
-  padding: 0.3rem 1rem; /* Ukuran tombol lebih kecil */
+  padding: 0rem 1rem; /* Ukuran tombol lebih kecil */
   font-size: 0.9rem; /* Mengurangi ukuran font */
 }
 
@@ -273,10 +273,12 @@ header.navbar-container .nav-list li a {
   padding-top: 10px;
 }
 
-  .foto-profile img{
-    margin-top: 70px;
-    margin-top: -20px !important; /* Kurangi jarak secara paksa */
+
+  .title-name {
+    flex-direction: column; /* Pastikan elemen diatur secara vertikal */
+    gap: 1rem; /* Tambahkan jarak antar elemen */
   }
+  
   .designs-gallery {
     display: flex;
     flex-direction: column; /* Menyusun gambar secara vertikal */
@@ -302,14 +304,25 @@ header.navbar-container .nav-list li a {
   }
   .text-content h1,h2 {
     font-size: 1.5rem;
+    margin: 0 auto;
   }
+  .foto-profile {
+    
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: -20px !important; /* Kurangi jarak secara paksa */
+  }
+
   .foto-profile img{
     width: 150px;
     min-width: 150px;
+    margin: 0 auto !important;
   }
   .foto-about img {
     width: 200px;
     min-width: 200px;
+    
   }
   .title-name {
   flex-direction: column;
