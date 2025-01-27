@@ -251,6 +251,9 @@ button[type="submit"]:hover {
     padding: 0px 0; /* Mengurangi jarak padding */
     gap: 1px; /* Jarak antar elemen lebih rapat */
 }
+  footer{
+    font-size: 0.7rem;
+  }
 #home {
     height: 80vh; /* Use viewport height instead of fixed pixel value */
 }
@@ -270,11 +273,9 @@ header.navbar-container .nav-list li a {
   padding-top: 10px;
 }
 
-
-
-
   .foto-profile img{
     margin-top: 70px;
+    margin-top: -20px !important; /* Kurangi jarak secara paksa */
   }
   .designs-gallery {
     display: flex;
